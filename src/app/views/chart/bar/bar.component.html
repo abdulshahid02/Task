@@ -1,0 +1,43 @@
+<div class="row-content row">
+    <div class="col-md-12 outer-box">
+      <mat-card>
+        <mat-card-title>Bar Chart
+          <mat-divider></mat-divider>
+        </mat-card-title>
+        <mat-card-content><br>
+          <div class="row chartView">
+              
+           <div class="col-md-6 mb-5">
+              <div class=" item-card pointer p-3">
+                <h5>Bar Chart</h5>
+                <div echarts  [options]="options1" style="height: 450px;"></div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 mb-5">
+              <div class=" item-card pointer p-3">
+                <h5>Horizontal Bar Chart</h5>
+                <div echarts  [options]="optionHBarChart" style="height: 450px;"></div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 ">
+              <div class=" item-card pointer p-3">
+                <h5> Statistics Chart</h5>
+                <div echarts  [options]="optionBar" style="height: 400px;">
+                </div>
+            </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class=" item-card pointer p-3">
+                <h5>Horizontal Statistics Chart</h5>
+                <div echarts [options]="optionHBar" style="height: 400px;"></div>  
+                        </div>
+            </div>
+          </div>
+          <br>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>

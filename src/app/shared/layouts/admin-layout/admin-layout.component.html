@@ -1,0 +1,22 @@
+<!-- <app-header-top (toggleSideBarForMe)="sideBarToggler()"></app-header-top> -->
+<!--<mat-progress-bar style="z-index: 2" *ngIf="AppConfig.showLoader" mode="indeterminate"></mat-progress-bar>-->
+<!--<mat-progress-bar style="z-index: 2"  mode="indeterminate"></mat-progress-bar>-->
+
+<mat-drawer-container [ngClass]="themeClass | async">
+
+  <mat-drawer mode="side" [opened]="sideBarOpen" *ngIf="!headerFooter">
+    <!-- <app-header-side></app-header-side> -->
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <app-header-top (toggleSideBarForMe)="sideBarToggler()" *ngIf="!headerFooter"></app-header-top>
+
+    <div class="" style="overflow-y: auto !important;
+      height: 90vh;">
+      <router-outlet></router-outlet>
+      <app-footer *ngIf="!headerFooter"></app-footer>
+    </div>
+  </mat-drawer-content>
+
+</mat-drawer-container>

@@ -1,0 +1,61 @@
+<mat-toolbar color="primary" class="header-top">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="toggleSideBar()" class="d-none">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-form-field class="mb-0 ">
+      <mat-icon matPrefix>search</mat-icon>
+      <input matInput type="text" placeholder="Search customers here.." [(ngModel)]="value" />
+      <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+    <p class="mb-0  d-none"> <img src="../../../assets/images/logo.png" height="30px">
+      <span class="pl-2">Angular Dashboard </span>
+    </p>
+    <span class="example-spacer"></span>
+    <button mat-button class="">
+      <mat-icon>notifications_none</mat-icon>
+    </button>
+    <button mat-button [matMenuTriggerFor]="menu" class="">
+      Shahid <mat-icon>arrow_drop_down </mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false" yPosition="below">
+      <button mat-menu-item>
+        <mat-icon>account_box</mat-icon>
+        <span>My Profile</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Sign out</span>
+      </button>
+    </mat-menu>
+    <!-- <mat-form-field class="mb-0 d-flex">
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput type="search" placeholder="search here" class="search-input">
+    </mat-form-field> -->
+
+    <!-- 
+<button mat-icon-button [matMenuTriggerFor]="thememenu">
+  <mat-icon>format_color_fill</mat-icon>
+</button>
+<mat-menu #thememenu="matMenu">
+  <button mat-menu-item (click)="pickColor('')">
+    <div class="color-swatch color-swatch-primary" mat-menu-item></div>
+  </button>
+  <button mat-menu-item (click)="pickColor('green')">
+    <div class="color-swatch color-swatch-green" mat-menu-item></div>
+  </button>
+  <button mat-menu-item (click)="pickColor('pink')">
+    <div class="color-swatch color-swatch-pink" mat-menu-item></div>
+  </button>
+
+  <button mat-menu-item (click)="pickColor('default')">
+    <div class="color-swatch color-swatch-default" mat-menu-item></div>
+  </button>
+
+</mat-menu> -->
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-progress-bar color="a" *ngIf="AppConfig.showLoader" mode="indeterminate"></mat-progress-bar>

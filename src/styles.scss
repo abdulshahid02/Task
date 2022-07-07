@@ -1,0 +1,146 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~font-awesome/css/font-awesome.css';
+@import './assets/styles/theme.scss';
+
+.angular-material-router-app-theme {
+  $theme: $angular-material-router-app-theme;
+  @include angular-material-theme($theme);
+  @include mat-grid-mixin($theme);
+}
+.angular-material-router-app-theme-green {
+  $theme: $angular-material-router-app-theme-green;
+  @include angular-material-theme($theme);
+  @include mat-grid-mixin($theme);
+}
+.angular-material-router-app-theme-default {
+  $theme: $angular-material-router-app-theme-default;
+  @include angular-material-theme($theme);
+  @include mat-grid-mixin($theme);
+}
+.angular-material-router-app-theme-purple {
+  $theme: $angular-material-router-app-theme-purple;
+  @include angular-material-theme($theme);
+  @include mat-grid-mixin($theme);
+}
+.angular-material-router-app-theme-pink {
+  $theme: $angular-material-router-app-theme-pink;
+  @include angular-material-theme($theme);
+  @include mat-grid-mixin($theme);
+}
+.angular-material-router-app-theme-warn {
+  $theme: $angular-material-router-app-theme-warn;
+  @include angular-material-theme($theme);
+  @include mat-grid-mixin($theme);
+}
+
+.chartView .item-card{
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 3px 7px 0 #a8a8a8;
+}
+.chartView .item-card:hover {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 3px 7px 0 #a8a8a8;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+}
+.m-30{
+margin: 30px;
+}
+table {
+    width: 100%;
+  }
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  .row-content {
+    margin-right: 0px;
+    margin-left: 0px;
+    min-height: 530px;
+  }
+.outer-box {
+  padding:20px;
+}
+.inner-box {
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+button:focus{
+  outline: none !important;
+  /* outline: 5px auto -webkit-focus-ring-color; */
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+.mat-expansion-panel-header-title > .mat-icon {
+  transition: 1s;
+  transform: rotate(0deg);
+}
+
+.fw-400{
+  font-weight: 400;
+}
+
+.mat-stroked-button{
+  border: 1px solid !important;
+}
+.mat-flat-button.mat-warn, .mat-raised-button.mat-warn, .mat-fab.mat-warn, 
+.mat-mini-fab.mat-warn{
+background: #ffc107  !important;
+color:#000 !important;
+}
+
+.mat-button.mat-warn, .mat-icon-button.mat-warn, .mat-stroked-button.mat-warn{
+  color: #ffc107  !important;
+}
+
+.mat-flat-button.mat-sucess, .mat-raised-button.mat-sucess, .mat-fab.mat-sucess, 
+.mat-mini-fab.mat-sucess{
+background: #28a745 !important;
+color: #ffffff !important;
+}
+
+.mat-button.mat-sucess, .mat-icon-button.mat-sucess, .mat-stroked-button.mat-sucess{
+  color: #28a745 !important;
+}
+
+.mat-flat-button.mat-dark, .mat-raised-button.mat-dark, .mat-fab.mat-dark, 
+.mat-mini-fab.mat-dark{
+background: #1d2124 !important;
+color: #ffffff !important;
+}
+
+.mat-button.mat-dark, .mat-icon-button.mat-dark, .mat-stroked-button.mat-dark{
+  color: #1d2124 !important;
+}
+
+.mat-flat-button.mat-secondary, .mat-raised-button.mat-secondary, .mat-fab.mat-secondary, 
+.mat-mini-fab.mat-secondary{
+background: #545b62 !important;
+color: #ffffff !important;
+}
+
+.mat-button.mat-secondary, .mat-icon-button.mat-secondary, .mat-stroked-button.mat-secondary{
+  color: #545b62 !important;
+}
+

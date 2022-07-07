@@ -1,0 +1,41 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer {
+  width: 230px;
+}
+
+mat-drawer-container {
+  height: 100%;
+}
+
+.mat-drawer-content {
+  overflow: hidden;
+}
+
+// .header-top
+// {position: fixed;z-index: 1000 ; width: 82% !important;
+// }
+
+// @media screen and (min-width: 992px) {
+//   .header-top{
+//   width: 82% !important;
+//   }
+// }
+
+// /* On screens that are 992px or less, set the background color to blue */
+// @media screen and (max-width: 992px) {
+//   .header-top{
+//   width: 82% !important;
+//   }
+// }
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .header-top {
+    width: 100% !important;
+  }
+}

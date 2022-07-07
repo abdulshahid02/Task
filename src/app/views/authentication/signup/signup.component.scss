@@ -1,0 +1,62 @@
+.login-container{
+    margin-top: 6%;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #811434;
+}
+.login-form-2{
+    padding: 10%;
+    background: #811434;
+    // background: radial-gradient(#7ecbd4, #811434);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3, .login-form-2 p{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.image{
+    width: 100%;
+}
+h3 .mat-icon{
+ width: auto !important;
+ height: auto !important;
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
+
+::ng-deep  .mat-form-field-label{
+    /*change color of label*/
+    color: #666666 !important;
+   }
+  
+   ::ng-deep .mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #666666 !important;
+  } 
+  
+  ::ng-deep .mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: #666666 !important;;
+  }
+  
+  
+  ::ng-deep .mat-input-element{
+      color:#666666 !important;
+    }
+    

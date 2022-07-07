@@ -1,0 +1,39 @@
+<div class="row-content row">
+    <div class="col-md-12 outer-box">
+      <mat-card>
+        <mat-card-title>Line Chart
+          <mat-divider></mat-divider>
+        </mat-card-title>
+        <mat-card-content><br>
+          <div class="row chartView">
+            <div class="col-md-6 mb-5">
+                <div class=" item-card pointer p-3">
+                  <h5>Basic Line Chart</h5>
+                  <div echarts [options]="optionBasic" [loading]="isLoading"  style="height: 400px;"></div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-5">
+                <div class=" item-card pointer p-3">
+                  <h5>Area Chart</h5>
+                  <div echarts [options]="optionLine" [loading]="isLoading"  style="height: 400px;"></div>
+                </div>
+              </div>
+            <div class="col-md-6">
+              <div class=" item-card pointer p-3">
+                <h5>Stacked Line Chart</h5>
+                <div echarts [options]="optionStackLine" [loading]="isLoading" theme="macarons" style="height: 400px;"></div>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <div class=" item-card pointer p-3">
+                <h5>Stacked Area Chart</h5>
+                <div echarts [options]="options2" [loading]="isLoading" theme="macarons" style="height: 400px;"></div>
+              </div>
+            </div>
+  
+          </div>
+          <br>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
